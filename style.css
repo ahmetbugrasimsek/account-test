@@ -1,0 +1,116 @@
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF9933;
+    min-height: 16vh;
+    height: 19vh;
+    display: flex;
+    align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    background-image: url(.jpg);
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+}
+.header h1{
+    font-size: 30px;
+    margin-bottom: 9px;
+}
+.header p{
+    font-size: 20px;
+}
+.container{
+    
+    display: flex;
+}
+.sidebar{
+    background-image: url("pinterest.jpg");
+    background-size: cover;
+    background-position: center;
+    flex:1;
+    
+}
+.navbar ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.navbar li{
+    margin-top: 20px;
+    
+}
+.navbar li:last-child {
+    margin-bottom: 20px;
+}
+.navbar a{
+    text-decoration: none;
+    color: rgb(0, 85, 78);
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+.main{
+    padding: 20px;
+    text-align: center;
+    flex:3;
+    background-color:#E8B187;
+
+}
+.main img{
+    width: 250px;
+    height: 350px;
+}
+.main h1{
+    text-align: center;
+}
+.main p{
+    text-align: left;
+}
+.footer{
+    border: 5px solid black;
+    min-height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(240, 147, 53);
+    
+}
+
+
+@media screen and (max-width:800px){
+    .container {
+        flex-direction: column;
+
+    }
+    .main td {
+       width: 300px;
+    }
+    .header h1{
+        font-size: 30px;
+    }
+    .main img{
+        width: 30px;
+    height: 30px;
+    }
+    .main h1{
+        font-size: 30px;
+    }
+} 
